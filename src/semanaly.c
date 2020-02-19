@@ -302,7 +302,7 @@ int chkBisonDeclar(node *nptr) {
 
 
 int chkCDeclar(node *nptr) {
-  childptr *tmpptr;
+  /* childptr *tmpptr; */
 
   /* ignore it ... at the moment we do nothing with it */
   return OK;

@@ -1,4 +1,4 @@
-#ifndef SEMANLY_H
+#ifndef SEMANALY_H
 #define SEMANALY_H
 /* YaccViso - a tool for visualizing dependencies of nonterminals in a yacc  */
 /*            grammar file                                                   */

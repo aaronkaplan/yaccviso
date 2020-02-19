@@ -68,9 +68,9 @@ dep_tbl_entry *chkTSTARTYaccIdentifier(node *nptr) {
 
 dep_tbl_entry *chkNmnoYaccIdentifier(node *nptr, symentry *semval, 
 				 int which_rword) {
-  childptr *tmpptr;
-  dep_tbl_entry *tmp_dep_tbl_ptr;
-  symentry *tmp_symptr;
+  childptr *tmpptr = NULL;
+  dep_tbl_entry *tmp_dep_tbl_ptr = NULL;
+  symentry *tmp_symptr = NULL;
 
   tmpptr = nptr->childrenstart;
   /* safety check */
@@ -154,7 +154,7 @@ int chkNmno(node *nptr, symentry *semval, int which_rword) {
 
 int chkRword(node *nptr) {
   childptr *tmpptr;
-  int retval;
+  int retval = 0;
 
   tmpptr = nptr->childrenstart;
   if (tmpptr->child == NULL) {
@@ -168,7 +168,7 @@ int chkRword(node *nptr) {
   case TLEFT:
     retval = TTOKEN;		       /* we abstract here: we are only  */
     break;
-  case TRIGHT:			       /* interested if its a token or a  */
+  case TRIGHT:			           /* interested if its a token or a  */
     retval = TTOKEN;		       /* non terminal */
     break;
   case TNONASSOC:

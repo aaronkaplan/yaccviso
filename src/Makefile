@@ -48,7 +48,7 @@ endif
 # used. Note that you must have flex 2.5.4 or greater.
 #LEX=		lex
 #LEXOPT=	
-LEX=		flex
+LEX=		lex
 #LEX=		flex
 LEXOPT=		-L -l
 

@@ -91,7 +91,7 @@ extern		char    linebuf[BUFMAX]; /* Buffer for current line of input */
                                            for the compiler at the moment, but
                                            at least I check, if we are withing
                                            array bounds */
-extern          int     yyleng;		/*  thx 2 flex, we have to do that */
+extern          unsigned long     yyleng;		/*  thx 2 flex, we have to do that */
 extern          char    *expect;        /* string for storing messages 
                                            "expecting ..." */
 extern          FILE    *outfile;       /* fd of outputfile */
